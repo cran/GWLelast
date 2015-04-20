@@ -1,0 +1,15 @@
+Package: GWLelast
+Type: Package
+Title: Geographically Weighted Logistic Elastic Net Regression
+Version: 1.0
+Date: 2015-04-20
+Author: Daisuke Yoneoka, Eiko Saito
+Maintainer: Daisuke Yoneoka <blue.sky.sea.dy@gmail.com>
+Description: Fit a geographically weighted logistic elastic net regression.
+License: GPL-2
+Suggests: testthat
+Imports: doParallel,geosphere,sp,spgwr,glmnet,doMC,foreach
+Packaged: 2015-04-20 03:55:57 UTC; Daisuke
+NeedsCompilation: no
+Repository: CRAN
+Date/Publication: 2015-04-20 14:25:06

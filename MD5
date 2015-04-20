@@ -1,0 +1,15 @@
+12d52cdc53b6703ddca1ae5a6c43d840 *DESCRIPTION
+8f40238610960348960ed7f807cdfe0b *NAMESPACE
+cea25e913d6f0e0daadfdc4cf0b03117 *R/GWLelast.cv.bw.R
+a0b32855f50dba0aeb1ea46f99728201 *R/GWLelast.est.R
+ce7954b88274bbcee882a6b13723aafd *R/GWLelast.inner.R
+48a9af63a6471c45d483b50639d7ae6e *R/GWLelast.inner.parallel.R
+5a215d977f594a5f0b874f7112917dd8 *R/GWLelast.sel.bw.R
+71727f036ae8fef4020bc8ba4777434c *R/GWLelastic.R
+0dfee98d4130b89a50f26b1ba8ce7b63 *man/GWLelast.Rd
+36c47154efc79f95ab9f904ef41b7a79 *man/GWLelast.cv.bw.Rd
+95a667521ef2945875452146f09a8613 *man/GWLelast.est.Rd
+ad84f1c3368866ec151519e155380228 *man/GWLelast.inner.Rd
+71aed9b2742fb0f03cfdd379fa5686e7 *man/GWLelast.inner.parallel.Rd
+31b367ac7bb33bf57f0640394b132ff0 *man/GWLelast.sel.bw.Rd
+0cc74ab2d4a74c15fcb58e3a1503e773 *man/GWLelastic-package.Rd
