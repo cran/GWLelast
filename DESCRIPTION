@@ -1,15 +1,18 @@
 Package: GWLelast
 Type: Package
 Title: Geographically Weighted Logistic Elastic Net Regression
-Version: 1.1
-Date: 2015-04-20
+Version: 1.2.1
 Author: Daisuke Yoneoka, Eiko Saito
 Maintainer: Daisuke Yoneoka <blue.sky.sea.dy@gmail.com>
-Description: Fit a geographically weighted logistic elastic net regression.
-License: GPL-2
-Suggests: testthat
-Imports: doParallel,geosphere,sp,spgwr,glmnet,foreach
-Packaged: 2015-04-24 06:29:24 UTC; Daisuke
+Description: Fit a geographically weighted logistic elastic net regression. Detailed explanations can be found in Yoneoka et al. (2016): New algorithm for constructing area-based index with geographical heterogeneities and variable selection: An application to gastric cancer screening <doi:10.1038/srep26582>.
+Depends: R (>= 3.0.1)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Imports: doParallel, geosphere, sp, spgwr, glmnet, foreach, methods,
+        stats
 NeedsCompilation: no
+Packaged: 2018-05-03 21:39:40 UTC; dyoneoka
 Repository: CRAN
-Date/Publication: 2015-04-29 12:21:37
+Date/Publication: 2018-05-03 22:18:13 UTC

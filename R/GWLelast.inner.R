@@ -1,3 +1,5 @@
+#' GWLelast.inner
+#'
 #' Inner part of fitting GWLelast without parallel cores
 #'
 #' @param x Covariates.
@@ -7,29 +9,33 @@
 #' @param alpha The elasticnet mixing parameter [0,1] in glmnet package.
 #' @param lambda Optional user-supplied lambda sequence in glmnet package.
 #' @param nlambda The number of lambda values in glmnet package.
+#'
+#' @importFrom  stats predict
 #' @return model Fitted model at location i.
-#' @return cv.error Cross validation error.
+#' @return error Cross validation error.
+#' @export
+
 
 GWLelast.inner = function(x=x, y = y, coords = coords, W = W, lambda = lambda, alpha = 1, nlambda = nlambda) {
-  
+
   model = list()
   cv.error = list()
   GWLelast.inner = list()
-  
-  for(i in 1:dim(x)[1]){        
+
+  for(i in 1:dim(x)[1]){
     w = W[i, -i]
-    
+
     xi = as.matrix(x[-i,])
     yi = as.matrix(y[-i])
-    
+
     model[[i]] = glmnet(x = xi, y = yi, weights = w, family = "binomial", alpha = alpha, nlambda = nlambda, lambda = lambda)
-    predictions = predict(model, newx = t(x[i,]), type = "class") 
-    cv.error[[i]] = abs(as.numeric(predictions) - y[i])
-    
+    predictions = predict(model, newx = t(x[i,]), type = "class")
+    error[[i]] = abs(as.numeric(predictions) - y[i])
+
   }
-  
+
   GWLelast.inner[["model"]] = model
-  GWLelast.inner[["cv.error"]] = cv.error
-  
+  GWLelast.inner[["error"]] = error
+
   return(GWLelast.inner)
 }
